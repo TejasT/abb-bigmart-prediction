@@ -1,4 +1,5 @@
 import gc
+import sys
 import numpy as np
 import pandas as pd
 from sklearn.preprocessing import LabelEncoder, StandardScaler
@@ -10,8 +11,10 @@ from lightgbm import LGBMRegressor
 from catboost import CatBoostRegressor
 
 # load data
-train = pd.read_csv("train_v9rqX0R.csv")
-test = pd.read_csv("test_AbJTz2l.csv")
+train_path = sys.argv[1] if len(sys.argv) > 1 else "train_v9rqX0R.csv"
+test_path = sys.argv[2] if len(sys.argv) > 2 else "test_AbJTz2l.csv"
+train = pd.read_csv(train_path)
+test = pd.read_csv(test_path)
 test_ids = test[["Item_Identifier", "Outlet_Identifier"]].copy()
 
 train["source"] = "train"

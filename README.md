@@ -74,8 +74,20 @@ The ridge has highest weight because the MRP-sales relationship is linear. Extra
 
 ## Setup
 
+Download the dataset from the [Analytics Vidhya BigMart Sales III](https://datahack.analyticsvidhya.com/contest/practice-problem-big-mart-sales-iii/) competition page.
+
 ```bash
 pip install -r requirements.txt
+```
+
+## Usage
+
+```bash
+# EDA (generates eda_plots.png)
+python eda.py <train.csv>
+
+# Train + predict (generates submission.csv)
+python final_submission.py <train.csv> <test.csv>
 ```
 
 ## What Did Not Work

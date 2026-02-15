@@ -1,4 +1,5 @@
 """basic data exploration and plots."""
+import sys
 import pandas as pd
 import numpy as np
 from numpy.polynomial import polynomial as P
@@ -6,7 +7,8 @@ import matplotlib
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt
 
-train = pd.read_csv("train_v9rqX0R.csv")
+train_path = sys.argv[1] if len(sys.argv) > 1 else "train_v9rqX0R.csv"
+train = pd.read_csv(train_path)
 
 # --- 2x2 EDA grid ---
 fig, axes = plt.subplots(2, 2, figsize=(12, 9))
