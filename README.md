@@ -1,6 +1,6 @@
 # BigMart Sales Prediction
 
-Stacking ensemble approach for the Analytics Vidhya BigMart Sales. **Rank 405** on the leaderboard.
+Stacking ensemble approach for the Analytics Vidhya BigMart Sales. **Rank 403** on the leaderboard.
 
 ![Leaderboard](Leaderboard.png)
 
@@ -62,7 +62,7 @@ Meta-learner weights (seed 42): LGB=0.36, CB=0.35, ET=-0.35, Ridge=0.66
 
 The ridge has highest weight because the MRP-sales relationship is linear. ExtraTrees gets negative weight. 
 
-**Cross validation RMSE: 1071.70** | **Leaderboard Rank: 405**
+**Cross validation RMSE: 1071.70** | **Leaderboard Rank: 403**
 
 ## Files
 
