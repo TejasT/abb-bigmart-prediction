@@ -70,6 +70,13 @@ The ridge has highest weight because the MRP-sales relationship is linear. Extra
 |---|---|
 | `final_submission.py` | Final model: 4-model stacking ensemble |
 | `eda.py` | Exploratory data analysis script |
+| `requirements.txt` | Python dependencies |
+
+## Setup
+
+```bash
+pip install -r requirements.txt
+```
 
 ## What Did Not Work
 
